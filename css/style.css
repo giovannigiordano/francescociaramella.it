@@ -148,7 +148,7 @@ span.span-title-left {
 ---------------------------------*/
 .navbar {
   top: 0;
-  background: #06a3db;
+  background: #5cbfbb;
   padding: 25px 0;
   position: fixed;
   width: 100%;
@@ -227,7 +227,7 @@ span.span-title-left {
 ---------------------------------*/
 .intro {
   color: #eee;
-  background: #06a3db;
+  background: #5cbfbb;
   padding: 200px 0 160px;
   text-align: center;
 }
@@ -236,7 +236,9 @@ span.span-title-left {
 }
 .intro h1 {
   color: #fff;
+  font-size: 68px;
   padding: 0 130px;
+  text-shadow: 0 0 2px rgb(0 0 0 / 25%);
   z-index: 1;
 }
 .intro .content-right img {
@@ -290,7 +292,7 @@ span.span-title-left {
   padding-top: 130px;
 }
 .about .content-left {
-  background: url(../img/about1.jpg) center no-repeat;
+  background: url(../img/about1.jpeg) center no-repeat;
   background-size: cover;
   text-align: right;
   border-radius: 10px;
@@ -378,6 +380,18 @@ span.span-title-left {
 .services .content h5 {
   margin-bottom: 25px;
 }
+.services__wrapper {
+  align-items: stretch;
+  display: flex;
+  gap: 24px;
+}
+
+.services__wrapper__col {
+  flex: 1 1 0%;
+}
+.services__wrapper__col .content{
+  height: 100%;
+}
 
 /* ------------------------------
   testimonial
@@ -444,7 +458,7 @@ span.span-title-left {
   float: left;
 }
 .contact .content .icon i {
-  background: #06a3db;
+  background: #5cbfbb;
   font-size: 25px;
   color: #fff;
   height: 50px;
@@ -547,8 +561,11 @@ footer ul li i:hover {
   .services {
     padding-top: 120px;
   }
-  .services .col-md-4 {
-    flex: 50%;
+  .services__wrapper {
+    flex-direction: column;
+  }
+  .services__wrapper__col {
+    flex: 1 1 100%;
   }
 
   .contact .col-md-3 {
