@@ -108,10 +108,10 @@ Table of content:
   --bg-color-even: #E8E8E8;
   --bg-color-odd: #F4F4F4;
   --bg-light: #F8F9FA;
-  --bg-dark-1: #000A5B;
-  --bg-dark-2: #071630;
-  --bg-dark-3: #1e1e1e;  
-  --bg-dark-1-rgb: 0, 10, 91;
+  --bg-dark-1: #1D4B4C;
+  --bg-dark-2: #123536;
+  --bg-dark-3: #1e1e1e;
+  --bg-dark-1-rgb: 29, 75, 76;
   --bg-grey: #eeeeee;
   --bg-gradient-1: 0deg, rgba(var(--primary-color-rgb), .1) 0%, rgba(var(--secondary-color-rgb), .2) 100%;
   --swiper-theme-color: var(--secondary-color);
