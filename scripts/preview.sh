@@ -17,7 +17,7 @@ trap 'rm -rf "$BUILD"' EXIT
 cd "$ROOT"
 git ls-files -z | while IFS= read -r -d '' f; do
   case "$f" in
-    CNAME|README.md|scripts/*|.github/*|*.php) continue ;;
+    CNAME|README.md|.gitignore|scripts/*|.github/*|*.php) continue ;;
   esac
   [ -f "$f" ] || continue # tracked but deleted in the working tree
   mkdir -p "$BUILD/$(dirname "$f")"
