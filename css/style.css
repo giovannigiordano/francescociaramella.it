@@ -12699,3 +12699,58 @@ img {
     width: auto;
   }
 }
+
+/* hero on phones: photo first, then the cards stacked below it (no overlap or overflow) */
+@media only screen and (max-width: 767px) {
+  #section-intro .hero-media {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+  #section-intro .hero-media > img {
+    order: -1;
+    margin-bottom: 15px;
+  }
+  #section-intro h1 {
+    font-size: 34px;
+  }
+  #section-intro .hero-card {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    transform: none;
+    margin-bottom: 15px;
+  }
+  #section-intro .hero-card > .d-flex {
+    justify-content: flex-start !important;
+    align-items: center;
+    white-space: normal;
+  }
+  #section-intro .hero-card > .d-flex > div {
+    min-width: 0;
+  }
+}
+
+/* homepage icon cards on phones: icon beside the text instead of above it */
+@media only screen and (max-width: 767px) {
+  .home-icons .h-100 {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .home-icons .h-100 > img {
+    width: 48px;
+    flex: 0 0 48px;
+    margin: 0 !important;
+  }
+  .home-icons .h-100 > .relative {
+    margin-top: 0 !important;
+  }
+  .home-icons h4.h-60px {
+    height: auto;
+    margin-bottom: 6px;
+  }
+  .home-icons p {
+    margin-bottom: 10px;
+  }
+}
