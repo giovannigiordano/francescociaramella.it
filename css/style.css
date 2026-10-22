@@ -4049,6 +4049,12 @@ ul.cols-2{
   -moz-columns: 2;
 }
 
+ul.cols-3{
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
 .ul-check {
   padding: 0;
   list-style: none;
@@ -12364,7 +12370,8 @@ img {
     border:none;
   }
 
-  ul.cols-2{
+  ul.cols-2,
+  ul.cols-3{
     columns: 1;
     -webkit-columns: 1;
     -moz-columns: 1;
