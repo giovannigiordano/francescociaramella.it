@@ -12754,3 +12754,8 @@ img {
     margin-bottom: 10px;
   }
 }
+
+/* images carry width/height to reserve space while loading; keep them responsive */
+img[width][height] {
+  height: auto;
+}
